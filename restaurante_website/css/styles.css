@@ -1,6 +1,435 @@
+
 body{
     font-size: 16px;
     color: #fff;
     background-color: #61122f;
     font-family: 'Oxygen', sans-serif;
+}
+
+/*START OF HEADER*/
+
+#header-nav{
+    background-color: #f6b319;
+    border: 0px;
+}
+
+#logo-img{
+    background: url('../images/restaurant-logo_large.png') no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+    padding-top: 25px;
+}
+
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.75;
+}
+
+.navbar-brand p{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 15px;
+}
+
+.navbar-brand p span{
+    vertical-align: middle;
+}
+
+#nav-list a{
+    color: #951C49;
+    text-align: center;
+}
+
+#nav-list a:hover{
+    background: #E7E7E7;
+}
+#nav-list a span{
+    font-size: 1.8em;
+}
+
+#phone a{
+    text-align: right;
+    padding-bottom: 0;
+}
+
+#phone div{
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+}
+
+#header-nav button.navbar-toggler{
+    border: 1px solid #61122f;
+}
+
+#collapsable-nav a,#collapsable-nav a span{
+    font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+    margin-right: 5px;
+}
+
+#call-btn{
+    margin-top: 20px;
+    background-color: #f6b319;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/*END OF HEADER*/
+
+
+/*START OF FOOTER STYLES*/
+.card-footer{
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: #222;
+    border-top: 0;
+}
+.card-footer div.row{
+    margin-bottom: 35px;
+}
+#hours, #address{
+    line-height: 2;
+}
+#hours  hr, #address  hr{
+    border-color: #fff;
+}
+#hours > span, #address > span{
+    font-size: 1.3em;
+}
+#address p{
+    color: #557c3e;
+    font-size: 0.8em;
+    line-height: 1.8;
+}
+#testimonials{
+    font-style: italic;
+}
+#testimonials p:nth-child(2){
+    margin-top: 25px;
+}
+
+/*END OF FOOTER STYLES*/
+
+/*START OF HOME PAGE STYLES*/
+.jumbotron{
+    margin-top: 20px;
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+
+#menu-tile, #specials-tile, #map-tile{
+    height: 250px;
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid #3f0c1f;
+
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+
+#menu-tile{
+    background: url("../images/menu-tile.jpg") no-repeat;
+    background-position: center;
+}
+
+#specials-tile{
+    background: url("../images/specials-tile.jpg") no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.8;
+
+}
+
+/*END OF HOME PAGE STYLES*/
+
+
+/*******************************************************/
+/******************* Media Queries *********************/
+/*******************************************************/
+
+/******************* Large devices *********************/
+@media (min-width: 1200px){
+    .jumbotron{
+        background: url('../images/jumbotron_1200.jpg') no-repeat;
+        height: 675px;
+        
+    }
+
+}
+
+/******************* Medium Devices *********************/
+@media (min-width: 992px) and (max-width: 1199px){
+    /*Logo Medium*/
+    #logo-img{
+        background: url('../images/restaurant-logo_medium.png') no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5x 5px 5px 0;
+    }
+    #phone a{
+        font-size: 1.0vw;
+    }
+
+    .jumbotron{
+        background: url('../images/jumbotron_992.jpg') no-repeat;
+        height: 558px;
+        
+    }
+
+    #call-btn > a{
+    
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #951C49; 
+    }
+    
+    #md-deliver{
+        text-align: center;
+        color: #557c3e;
+        font-weight: bold;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+}
+
+/******************* Small Devices *********************/
+@media (min-width: 768px) and (max-width: 991px){
+    .jumbotron{
+        background: url('../images/jumbotron_768.jpg') no-repeat;
+        height: 432px;
+        
+    }
+
+    #call-btn > a{
+    
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #951C49; 
+    }
+    
+    #md-deliver{
+        text-align: center;
+        color: #557c3e;
+        font-weight: bold;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+}
+
+/******************* Extra Small Devices *********************/
+@media (min-width: 576px) and (max-width: 767px){
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    
+    .navbar-brand h1{
+        padding-top: 10px;
+        font-size: 5vw; /* vw = viewport width and 1vw = 1% of viewport width */
+    }
+    
+    .navbar-brand p{
+        font-size: 0.6em;
+        margin-top: 12px;
+    }
+
+    .navbar-brand p img{
+        height: 20px;
+    }
+
+    #call-btn > a{
+    
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #951C49; 
+    }
+    
+    #md-deliver{
+        text-align: center;
+        color: #557c3e;
+        font-weight: bold;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+
+    }
+
+}
+
+@media (min-width: 389px) and  (max-width: 575px){
+    
+    /*Header*/
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    
+    .navbar-brand h1{
+        padding-top: 10px;
+        font-size: 5vw; /* vw = viewport width and 1vw = 1% of viewport width */
+    }
+    
+    .navbar-brand p{
+        font-size: 0.6em;
+        margin-top: 12px;
+    }
+
+    .navbar-brand p img{
+        height: 20px;
+    }
+
+    #call-btn > a{
+    
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #951C49; 
+    }
+
+    /*End of Header*/
+    
+    /*Footer*/
+    .card-footer section{
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+    .card-footer section:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .card-footer section hr{
+        width: 50%;
+    }
+    /*End of footer*/
+
+    /*Home Page*/
+    
+    #md-deliver{
+        text-align: center;
+        color: #557c3e;
+        font-weight: bold;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+
+    }
+
+    #menu-tile, #specials-tile{
+        width: 360px;
+        margin: 0 auto 15px;
+    }
+}
+
+@media (max-width: 388px){
+    /*Header*/
+    .navbar-brand{
+        padding-top: 10px;
+        height: 80px;
+    }
+    
+    .navbar-brand h1{
+        padding-top: 10px;
+        font-size: 6vw; /* vw = viewport width and 1vw = 1% of viewport width */
+    }
+    
+    .navbar-brand p{
+        font-size: 0.8em;
+        margin-top: 12px;
+    }
+
+    .navbar-brand p img{
+        height: 18px;
+    }
+    /*End of Header*/
+
+     /*Footer*/
+     .card-footer section{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .card-footer section:nth-child(3){
+        margin-bottom: 0px;
+    }
+
+    .card-footer section hr{
+        width: 50%;
+    }
+    /*End of footer*/
+
+    #call-btn > a{
+    
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: #951C49; 
+    }
+    
+    #md-deliver{
+        text-align: center;
+        color: #557c3e;
+        font-weight: bold;
+        font-size: 1.1em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    .jumbotron{
+        margin-top: 30px;
+        padding: 0;
+
+    }
+
+    #menu-tile, #specials-tile{
+        width: 290px;
+        margin: 0 auto 15px;
+    }
 }
