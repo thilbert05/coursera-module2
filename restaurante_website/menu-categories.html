@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David Chu China Bistro</title>
+    <title>David Chu China Bistro - Menu Categories</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -32,17 +32,17 @@
 
                 <div class="collapse navbar-collapse" id="collapsable-nav">
                 <ul id="nav-list" class="navbar-nav ml-auto">
-                    <li class="nav-item active d-block d-sm-block d-md-none">
+                    <li class="nav-item d-block d-sm-block d-md-none">
                         <a class="nav-link" href="index.html"><span><svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
                             <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                           </svg></span>Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="menu-categories.html"><span><svg class="bi bi-book-half" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M12.786 1.072C11.188.752 9.084.71 7.646 2.146A.5.5 0 0 0 7.5 2.5v11a.5.5 0 0 0 .854.354c.843-.844 2.115-1.059 3.47-.92 1.344.14 2.66.617 3.452 1.013A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.276-.447L15.5 2.5l.224-.447-.002-.001-.004-.002-.013-.006-.047-.023a12.582 12.582 0 0 0-.799-.34 12.96 12.96 0 0 0-2.073-.609zM15 2.82v9.908c-.846-.343-1.944-.672-3.074-.788-1.143-.118-2.387-.023-3.426.56V2.718c1.063-.929 2.631-.956 4.09-.664A11.956 11.956 0 0 1 15 2.82z"/>
                             <path fill-rule="evenodd" d="M3.214 1.072C4.813.752 6.916.71 8.354 2.146A.5.5 0 0 1 8.5 2.5v11a.5.5 0 0 1-.854.354c-.843-.844-2.115-1.059-3.47-.92-1.344.14-2.66.617-3.452 1.013A.5.5 0 0 1 0 13.5v-11a.5.5 0 0 1 .276-.447L.5 2.5l-.224-.447.002-.001.004-.002.013-.006a5.017 5.017 0 0 1 .22-.103 12.958 12.958 0 0 1 2.7-.869z"/>
-                          </svg></span><br class="d-none d-md-block d-lg-block"> Menu</a>
+                          </svg></span><br class="d-none d-md-block d-lg-block">Menu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html"><span><svg class="bi bi-info-circle" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -77,27 +77,97 @@
         <div id="md-deliver" class="d-block d-sm-block d-md-block d-lg-none">* We Deliver</div>
     </div>
 
-    <div id="main-content" class="container"> <!--Home Website container for Jumbotron and Tiles-->
-        <div class="jumbotron">
-            <img src="images/jumbotron_768.jpg" alt="Restaurante Image" class="img-fluid d-block d-sm-block d-md-none d-lg-none">
+    <div id="main-content" class="container"><!-- container for the small and extra small phone number visual-->
+        <h2 id="menu-categories-title" class="text-center">
+            Menu Categories
+        </h2>
+        <div class="text-center">
+            Substituting white rice with brown rice or fried rice after 3:00pm will be $1.50 for a pint and $2.50 for a quart.
         </div>
 
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <a href="menu-categories.html"><div id="menu-tile"><span>Menu</span></div></a>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <a href="single-category.html"><div id="specials-tile"><span>Specials</span></div></a>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <a href="https://goo.gl/maps/rQm5ziPnihxFEGh46" target="_blank">
-                    <div id="map-tile">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12338.70098200007!2d-76.7116881!3d39.3635903!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1ses-419!2spa!4v1590457366584!5m2!1ses-419!2spa" width="100%" height="246px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                        <span>Map</span>
-                    </div><!--End of the map div-->
+        <section class="row">
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
                 </a>
-            </div><!--End of the map-tile -->
-        </div><!--End of the row-->
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+            <div class="col-xxs-12 col-6 col-sm-4 col-md-3">
+                <a href="single-category.html">
+                    <div class="category-tile">
+                        <img src="images/menu/B/B.jpg" alt="Lunch Category">
+                        <span>Lunch</span>
+                    </div>
+                </a>
+            </div><!--End of tile div-->
+
+        </section>
         
     </div><!--End of the container-->
 

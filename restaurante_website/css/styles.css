@@ -6,11 +6,16 @@ body{
     font-family: 'Oxygen', sans-serif;
 }
 
+.active{
+    background-color: #E7E7E7;
+}
+
 /*START OF HEADER*/
 
 #header-nav{
     background-color: #f6b319;
     border: 0px;
+    margin-bottom: 35px;
 }
 
 #logo-img{
@@ -173,6 +178,100 @@ body{
 
 /*END OF HOME PAGE STYLES*/
 
+/*START MENU CATEGORIES STYLES*/
+
+.category-tile{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 15px;
+}
+
+.category-tile img{
+    width: 200px;
+    height: 200px;
+}
+
+.category-tile span{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.8;
+}
+
+.category-tile:hover{
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div{
+    margin-bottom: 50px;
+}
+
+/*END MENU CATEGORIES STYLES*/
+
+/*sTART OF SINGLE CATEGORY STYLES*/
+
+.menu-item-tile{
+    margin-bottom: 25px;
+}
+
+.menu-item-tile hr{
+    width: 80%;
+    border-color: #fff;
+}
+
+.menu-item-tile .menu-item-price{
+    font-size: 1.1em;
+    text-align: right;
+    margin-top: -15px;
+    margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span{
+    font-size: 0.6em;   
+}
+
+.menu-item-photo{
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -15px;
+    margin-left: auto;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.menu-item-photo div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    background-color: #557c3e;
+    text-align: center;
+}
+
+.menu-item-description{
+    padding-right: 30px;
+}
+
+h3.menu-item-title{
+    margin: 0 0 10px;
+}
+
+.menu-item-details{
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+/*END OF SINGLE CATEGORY STYLES*/
 
 /*******************************************************/
 /******************* Media Queries *********************/
@@ -250,6 +349,17 @@ body{
         letter-spacing: 0.1em;
         text-transform: uppercase;
     }
+
+    /*Category Menu styles*/
+    .category-tile{
+        width: 170px;
+        height: 170px;
+        margin: 0 auto 25px;
+    }
+    .category-tile img{
+        width: 100%;
+    }
+
 }
 
 /******************* Extra Small Devices *********************/
@@ -294,6 +404,16 @@ body{
         margin-top: 30px;
         padding: 0;
 
+    }
+
+    /*Category Menu styles*/
+   .category-tile{
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 25px;
+    }
+    .category-tile img{
+        width: 100%;
     }
 
 }
@@ -366,6 +486,20 @@ body{
         width: 360px;
         margin: 0 auto 15px;
     }
+
+    /*STYLES FOR THE SINGLE CATEGORY ITEMS*/
+
+    .menu-item-photo{
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price{
+       text-align: center;
+    }
+    .menu-item-description{
+        text-align: center;
+    }
+
+    /*END OF SINGLE CATEGORY ITEMS*/
 }
 
 @media (max-width: 388px){
@@ -406,7 +540,7 @@ body{
     /*End of footer*/
 
     #call-btn > a{
-    
+
         text-align: center;
         text-decoration: none;
         font-size: 1.5em;
@@ -432,4 +566,39 @@ body{
         width: 290px;
         margin: 0 auto 15px;
     }
+
+    /*Category Menu styles*/
+    /*.category-tile{
+        width: 160px;
+        height: 160px;
+        margin: 0 auto 15px;
+    }
+    .category-tile img{
+        width: 100%;
+    }*/
+
+    /*NEW COLUMN GRID*/
+    .col-xxs-12{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    /*STYLES FOR THE SINGLE CATEGORY ITEMS*/
+
+    .menu-item-photo{
+        margin-right: auto;
+    }
+    .menu-item-tile .menu-item-price{
+       text-align: center;
+    }
+    .menu-item-description{
+        text-align: center;
+    }
+
+    /*END OF SINGLE CATEGORY ITEMS*/
 }
