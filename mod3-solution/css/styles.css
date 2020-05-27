@@ -1,0 +1,49 @@
+body{
+    font-family: 'Hind Siliguri', sans-serif;
+    background-color: #f3f3f3;
+}
+.navbar-brand{
+    font-family: 'Righteous', cursive;
+    font-size: 2em;
+}
+
+#nav-header{
+    margin-bottom: 35px;
+}
+
+#nav-list a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-list a:hover{
+    background-color: #97999c;
+}
+
+#nav-list hr{
+    border-color: #fff;
+}
+
+.navbar-toggler{
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+#main-heading{
+    margin-bottom: 25px;
+    font-size: 2.25em;
+}
+
+.content{
+    background-color: #97999c;
+    width: 100%;
+    max-height: 3000px;
+    padding: 15px;
+}
+
+section .content-heading{
+    text-align: center;
+}
+
+
+
