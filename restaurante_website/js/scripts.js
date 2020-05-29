@@ -44,6 +44,21 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
         return string;
     };
 
+    //remove the class 'active' from home and switch to Menu Button
+    var switchMenuToActive = function (){
+        //remove 'active' from home button
+        var classes = document.querySelector("#navHomeButton").className;
+        classes = classes.replace(new RegExp("active","g"),"");
+        document.querySelector("#navHomeButton").className = classes;
+
+        //Add 'active' class to Menu button if not already there
+        classes = document.querySelector("#navMenuButton").className;
+        if (classes.indexOf("active") == -1){
+            classes += " active";
+            document.querySelector("#navMenuButton").className = classes;
+        }
+    };
+
     document.addEventListener("DOMContentLoaded", function (event){
         showLoading("#main-content");
         $ajaxUtils.sendGetRequest(homeHtml, function (respondText){
@@ -71,6 +86,9 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
         $ajaxUtils.sendGetRequest(categoriesTitleHtml,function (categoriesTitleHtml){
             //Retrieve a single category snippet
             $ajaxUtils.sendGetRequest(categoryHtml, function (categoryHtml){
+                //Switch CSS class active to the menubutton
+                switchMenuToActive();
+
                 var categoriesViewHtml = buildCategoriesViewHtml(categories,categoriesTitleHtml,categoryHtml);
                 insertHTML("#main-content", categoriesViewHtml);
             },false);
@@ -84,6 +102,9 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
         $ajaxUtils.sendGetRequest(menuItemsTitleHtml, function (menuItemsTitleHtml){
             //retrieve single menu item snippet
             $ajaxUtils.sendGetRequest(menuItemHtml,function (menuItemHtml){
+                //Switch CSS class active to the menubutton
+                switchMenuToActive();
+
                 var menuItemsViewHtml = buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml,menuItemHtml);
                 insertHTML("#main-content",menuItemsViewHtml);
             },false);
