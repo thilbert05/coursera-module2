@@ -19,7 +19,7 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
     var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
     var categoriesTitleHtml = "snippets/categories-title-snippet.html";
     var categoryHtml = "snippets/category-snippet.html";
-    var menuItemsURL = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
+    var menuItemsUrl = "http://davids-restaurant.herokuapp.com/menu_items.json?category=";
     var menuItemsTitleHtml = "snippets/menu-items-title.html";
     var menuItemHtml = "snippets/menu-item.html";
     
@@ -61,8 +61,8 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
     //'categoryShort' is a short_name for a category
     dc.loadMenuItems = function (categoryShort){
         showLoading("#main-content");
-        $ajaxUtils.sendGetRequest(menuItemsURL+categoryShort,buildAndShowMenuItemsHTML);
-    }
+        $ajaxUtils.sendGetRequest(menuItemsUrl + categoryShort,buildAndShowMenuItemsHTML);
+    };
 
     //Builds HTML for the categories page based on the data
     //from the server
@@ -85,7 +85,7 @@ $(function (){ //$(function()...) is the same as document.addEventListener("DOMC
             //retrieve single menu item snippet
             $ajaxUtils.sendGetRequest(menuItemHtml,function (menuItemHtml){
                 var menuItemsViewHtml = buildMenuItemsViewHtml(categoryMenuItems, menuItemsTitleHtml,menuItemHtml);
-                insertHTML("#main-content",menuItemHtml);
+                insertHTML("#main-content",menuItemsViewHtml);
             },false);
         },false);
     }
